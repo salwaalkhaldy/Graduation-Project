@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './services/auth/AuthContext';
 import { ToastProvider } from './components/ui/Toast';
 import { DemoPanel } from './components/demo/DemoPanel';
@@ -38,7 +38,7 @@ import { AdminDriverVerification } from './pages/admin/DriverVerification';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <ToastProvider>
           <div className="relative min-h-screen flex flex-col font-sans">
@@ -90,6 +90,6 @@ export default function App() {
           </div>
         </ToastProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
