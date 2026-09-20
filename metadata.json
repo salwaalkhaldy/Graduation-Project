@@ -1,0 +1,6 @@
+{
+  "name": "Smart Delivery Platform",
+  "description": "Connecting sellers with nearby verified delivery drivers through proximity matching and real-time route tracking.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
